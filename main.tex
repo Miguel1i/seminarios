@@ -6,9 +6,32 @@
 \usepackage{geometry}            % Definição de margens
 \usepackage{graphicx}
 \usepackage{float}
-
+\usepackage[acronym]{glossaries} % Definição do glossário
+\usepackage{indentfirst}
 
 \geometry{a4paper, margin=2.5cm}
+
+
+\makeglossaries
+
+
+\newglossaryentry{Tempora}{
+    name=Tempora,
+    description={Programa de vigilância em massa operado pelo GCHQ do Reino Unido.  Interceptava e armazenava grandes quantidades de dados de comunicações por cabos de fibra ótica}
+}
+
+\newglossaryentry{PRISM}{
+    name=PRISM,
+    description={Programa de vigilância da NSA que coletava dados diretamente de empresas como Google, Facebook e Microsoft, permitindo monitorizar comunicações eletrônicas de indivíduos ao redor do mundo}
+}
+
+\newglossaryentry{XKeyscore}{
+    name=XKeyscore,
+    description={Ferramenta de análise da NSA usada para pesquisar e analisar dados de internet em tempo real, permitindo a monitorização de atividades online de qualquer usuário sem necessidade de autorização prévia}
+}
+
+\newacronym{nsa}{NSA}{National Security Agency / Agência de Segurança Nacional (EUA)}
+\newacronym{cia}{CIA}{Central Intelligence Agency / Agência Central de Inteligência (EUA)}
 
 \title{
     \vspace{-1cm} 
@@ -30,32 +53,54 @@
 \maketitle
 
 \begin{abstract}
-
+% Conteúdo do resumo
 \end{abstract}
+
+\newpage
+\tableofcontents
 
 \newpage
 
 \section{Apresentação do Caso}
+
+Em maio de 2013, o ex-funcionário da Agência de Segurança Nacional (NSA) dos Estados Unidos, Edward Snowden, divulgou material sensível ao \textit{The Guardian} e ao \textit{Washington Post} expondo a existência de vários programas de vigilância em massa - tais como o \gls{Tempora}, \gls{PRISM} e \gls{XKeyscore} - que permitiam a recolha e monitorização de comunicações de milhões de pessoas, não só em território norte-americano, como também em vários países.
+
+O que desencadeou um debate global sobre os limites do poder estatal, a proteção dos direitos à privacidade e a necessidade de transparência e controlo nos procedimentos de segurança.
+Tendo em conta o que nos foi ensinado em um módulo de ética, o caso não só revela falhas jurídicas, como também éticas, uma vez que a ação do Snowden coloca em causa a razão e a justificação da ação humana.
+
+Disto isto, dependendo do ponto de vista de cada um, as ações de Snowden foram consideradas ou um ato horrível ou um ato corajoso. Os defensores do mesmo vêem-no como um “herói” e um “patriota” devido ao facto do Governo dos Estados Unidos, através da \acrshort{nsa}, ter ido longe demais nas suas operações de monitoramento dos seus cidadãos e dos governantes de países aliados.
+\cite{tavani} 
+
 \section{Factos}
+
+Edward Snowden, que acumulou experiência na \acrshort{cia} e na \acrshort{nsa}, teve acesso a um vasto conjunto de documentos sigilosos enquanto prestava serviços para empresas contratadas pelo governo dos EUA. Insatisfeito com a recolha indiscriminada de dados – prática que viola o direito à privacidade –, decidiu agir para expor estes procedimentos. Em maio de 2013, deslocou-se para Hong Kong, onde entregou parte dos documentos a jornalistas de renome, como os do \textit{The Guardian} e do \textit{Washington Post}. Os documentos revelados demonstraram que a NSA implementava sistemas de interceptação que recolhiam registos de chamadas, e-mails, mensagens instantâneas e outras atividades digitais, sem o consentimento dos cidadãos. Como consequência, o governo norte-americano acusou-o de espionagem, furto de propriedade do Estado e divulgação indevida de informações classificadas, cancelando o seu passaporte e forçando-o a procurar asilo – primeiro numa zona de trânsito no Aeroporto de Moscovo, e depois na Rússia.
+
+
 
 
 \section{Partes Interessadas}
-
 
 \section{Princípios Violados}
 
 \section{Resolução do Problema}
 
-
 \section{Considerações Finais}
 
-
 \begin{thebibliography}{10}
+
+    \bibitem{tavani}
+        Tavani, H. T., \& Grodzinsky, F. S. (2014). Trust, betrayal, and whistle-blowing: Reflections on the Edward Snowden case. ACM SIGCAS Computers and Society, 44(3), 8-13.
+    \bibitem{teresa}
+    Teresa, M. (2024). Revelações de Edward Snowden: Legitimidade da acusação de espionagem à luz do capitalismo da vigilância e da desobediência civil. Handle.net. \url{http://hdl.handle.net/10362/169656}.
+
+    
+    
     \bibitem{chatgpt}
         OpenAI. (2024). \textit{ChatGPT}. OpenAI. Disponível em: \url{https://chatgpt.com/}. Versão 4o mini.
-
-
+    
+   
 \end{thebibliography}
 
-\end{document}
+\printglossaries
 
+\end{document}
