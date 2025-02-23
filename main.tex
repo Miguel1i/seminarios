@@ -11,28 +11,29 @@
 
 \geometry{a4paper, margin=2.5cm}
 
-
 \makeglossaries
 
 % Definição de acrónimos
 \newacronym{nsa}{NSA}{National Security Agency}
 \newacronym{cia}{CIA}{Central Intelligence Agency}
 \newacronym{gchq}{GCHQ}{Government Communications Headquarters}
+\newacronym{eua}{EUA}{Estados Unidos da América}
+\newacronym{acm}{ACM}{Association for Computing Machinery}
 
 % Definição de termos normais no glossário
 \newglossaryentry{tempora}{
     name=Tempora,
-    description={Programa de vigilância em massa operado pelo GCHQ do Reino Unido. Interceptava e armazenava grandes quantidades de dados de comunicações por cabos de fibra ótica}
+    description={Programa de vigilância em massa operado pelo \acrshort{gchq} do Reino Unido. Interceptava e armazenava grandes quantidades de dados de comunicações por cabos de fibra ótica}
 }
 
 \newglossaryentry{prism}{
     name=PRISM,
-    description={Programa de vigilância da NSA que coletava dados diretamente de empresas como Google, Facebook e Microsoft, permitindo monitorizar comunicações eletrônicas de indivíduos ao redor do mundo}
+    description={Programa de vigilância da NSA que coletava dados diretamente de empresas como Google, Facebook e Microsoft, permitindo a monitorização de comunicações eletrônicas de indivíduos ao redor do mundo}
 }
 
 \newglossaryentry{xkeyscore}{
     name=XKeyscore,
-    description={Ferramenta de análise da NSA usada para pesquisar e analisar dados de internet em tempo real, permitindo a monitorização de atividades online de qualquer usuário sem necessidade de autorização prévia}
+    description={Ferramenta de análise da NSA usada para pesquisar e analisar dados de internet em tempo real, permitindo a monitorização de atividades online de qualquer utilizador sem a necessidade de autorização prévia}
 }
 
 
@@ -48,15 +49,14 @@
     Ética
 }
 
-\author{Henrique Pacheco, Manuel Estrela, Miguel Rego}
+\author{Augusto Botelho, Henrique Pacheco, Manuel Estrela, Miguel Rego}
 \date{Docente: Maria Neves \\ \vspace{0.5cm}Licenciatura em Informática }
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
-% Conteúdo do resumo
+O caso de Edward Snowden deu origem a um dos maiores debates sobre ética, privacidade e segurança da informação do século XXI. Em 2013, Snowden revelou programas de vigilância em massa conduzidos pela NSA e outras agências de inteligência, expondo a coleta indiscriminada de dados de milhões de cidadãos sem o seu consentimento. Este trabalho analisa os factos do caso, identificando as partes interessadas, os princípios éticos violados e as suas consequências. A partir da análise ética, avalia-se o conflito entre segurança nacional e o direito à privacidade, considerando os dilemas enfrentados por Snowden ao tomar a decisão de divulgar as informações. Além disso, exploram-se soluções baseadas na ética deontológica e na ética preventiva para equilibrar a proteção da sociedade com a transparência governamental. Conclui-se que, embora Snowden tenha violado normas de confidencialidade, a sua ação trouxe à tona práticas abusivas, fomentando um debate global sobre os limites da vigilância estatal e a necessidade de maior supervisão democrática.
 \end{abstract}
 
 \newpage
@@ -71,7 +71,7 @@ Em maio de 2013, Edward Snowden, ex-analista da NSA, divulgou dados sigilosos ao
 O que fomentou um debate global sobre as limitações do poder estatal, a proteção dos direitos de privacidade e a necessidade de transparência e supervisão em processos de segurança \cite{teresa}.
 Tendo em conta o que nos foi ensinado em um módulo de ética, o caso não só revela falhas jurídicas, como também éticas, uma vez que a ação do Snowden coloca em causa a razão e a justificação da ação humana. 
 
-Disto isto, dependendo do ponto de vista de cada um, as ações de Snowden foram consideradas ou um ato horrível ou um ato corajoso. Os defensores do mesmo vêem-no como um “herói” e um “patriota” devido ao facto do Governo dos Estados Unidos, através da \acrshort{nsa}, ter ido longe demais nas suas operações de monitoramento dos seus cidadãos e dos governantes de países aliados \cite{tavani}. 
+Disto isto, dependendo do ponto de vista de cada um, as ações de Snowden foram consideradas ou um ato horrível ou um ato corajoso. Os defensores do mesmo vêem-no como um “herói” e um “patriota” devido ao facto do Governo dos Estados Unidos, através da \acrshort{nsa}, ter ido longe demais nas suas operações de monitorização dos seus cidadãos e dos governantes de países aliados \cite{tavani}. 
 
 \section{Factos}
 
@@ -80,16 +80,106 @@ Ao longo da carreira de Edward Snowden, este foi acumulando experiência na \acr
 
 Durante o seu tempo no Havai, este obteve acesso a um vasto conjunto de documentos sigilosos que violavam o direito à privacidade, Edward Snowden, pediu ao seu supervisor algumas semanas de férias e deslocou-se para Hong Kong onde onde entregou parte dos documentos a jornalistas de renome, como os do \textit{The Guardian} e do \textit{Washington Post}.
 
-Os documentos em questão relatavam o facto de que a \acrshort{nsa} implementava sistemas de interceptação que recolhiam registos de chamadas, e-mails, mensagens e outras atividades digitais, sem o conhecimento dos cidadãos. Como consequência o governo norte-americano acusou-o de espionagem, roubo de propriedade do Estado e divulgação inadequada de informações classificadas, cancelando o seu passaporte e coagindo-o a procurar asilo - primeiro numa zona de trânsito no Aeroporto de Moscovo, e depois na Rússia \cite{pilati}.
+Os documentos em questão relatavam o facto de que a \acrshort{nsa} implementava sistemas de interceptação que recolhiam registos de chamadas, e-mails, mensagens e outras atividades digitais, sem o concentimento dos cidadãos. Como consequência o governo norte-americano acusou-o de espionagem, roubo de propriedade do Estado e divulgação inadequada de informações classificadas, cancelando o seu passaporte e coagindo-o a procurar asilo - primeiro numa zona de trânsito no Aeroporto de Moscovo, e depois na Rússia \cite{pilati}.
+
+Snowden justificou sua decisão com base em princípios éticos e morais. Ele acreditava no direito de todos os membros do público de saberem. Ninguém deveria ser monitorado estritamente sem ter cometido qualquer crime ou sem a sua devida autorização. No seu ponto de vista, a Constituição dos \acrshort{eua} estava sendo claramente violada, e por isso sentiu um forte dever moral de expor toda a situação. \cite{permanentrecord}
+
+
 
 
 \section{Partes Interessadas}
 
+As partes interessadas no caso de Edward Snowden abrangem diversas entidades com interesses e perspectivas distintas. Edward Snowden, como figura central, é percebido por alguns como um herói ético que revelou e expôs abusos governamentais, enquanto outros o consideram um traidor, argumentando que as suas atitudes comprometeram a segurança nacional. O Governo dos Estados Unidos e as suas agências de inteligência, como a \acrshort{nsa} e a \acrshort{cia}, defendem que as suas práticas eram essenciais para a segurança e a luta ao terrorismo, apesar de operarem em grande sigilo e sem um controlo apropriado.
+A sociedade também é impactada de forma direta, uma vez que os dados de milhões de indivíduos foram coletados sem consentimento, suscitando preocupações sobre privacidade e monitoramento em massa. Além disso, empresas de tecnologia, como a Google, Apple e o Facebook, foram envolvidas no escândalo, já que os seus servidores foram utilizados para aceder e obter informações pessoais, o que gerou dúvidas a nível da sua responsabilidade na proteção dos dados dos utilizadores.
+
+Finalmente, os meios de comunicação desempenharam um papel essencial na divulgação e análise dos documentos que foram divulgados, fomentando um debate global sobre ética, segurança e direitos fundamentais. Jornalistas e investigadores foram fundamentais para contextualizar e detalhar a discussão sobre as implicações das revelações de Snowden, contribuindo para uma compreensão mais ampla das tensões entre privacidade e segurança nacional.
+
+
 \section{Princípios Violados}
 
-\section{Resolução do Problema}
+O caso de Edward Snowden evidencia um conflito ético profundo, no qual princípios fundamentais da ética profissional foram violados tanto pelo governo dos Estados Unidos quanto pelo próprio Snowden. A integridade e a objetividade foram comprometidas à medida que a \acrshort{nsa} conduziu operações de vigilância massiva sem transparência ou justificação clara ao público, priorizando a segurança nacional em detrimento dos direitos individuais. Essas ações violaram o princípio da honestidade e justiça da \acrshort{acm}, que exige que profissionais de computação sejam transparentes e justos com as suas práticas, garantindo que a tecnologia seja utilizada de maneira ética e responsável.
+
+Snowden, ao expor esses programas, violou a sua obrigação de confidencialidade, um princípio fundamental do código da \acrshort{acm}, mas justificou a sua ação com base na responsabilidade profissional e na preocupação com o bem-estar da sociedade, argumentando que o seu dever maior era para com o público e não apenas para com o seu empregador. Este dilema reflete o princípio da contribuição para a sociedade e bem-estar humano, segundo o qual profissionais devem sempre maximizar o benefício para as pessoas e minimizar os danos.
+
+A tensão entre a confidencialidade e a responsabilidade social é central neste caso. Enquanto o governo alegava agir dentro dos limites da legalidade, operava em zonas de ambiguidade jurídica e sem supervisão pública efetiva, violando o princípio da transparência e honestidade da \acrshort{acm}. Snowden, ao divulgar informações sigilosas, desafiou essa falta de transparência, mas colocou em risco dados sensíveis que poderiam comprometer operações de inteligência. Assim, a competência profissional também foi questionada, tanto no desenvolvimento dos programas da \acrshort{nsa}, que ignoraram considerações éticas básicas, quanto na decisão de Snowden de expor os documentos sem mediação institucional, o que levanta preocupações sobre a gestão responsável de dados.
+
+Além disso, a liderança profissional desempenhou um papel crucial neste dilema. Snowden assumiu a posição de denunciante, tomando uma decisão unilateral para revelar o que considerava uma grave injustiça, enquanto os responsáveis pelos programas de vigilância optaram por priorizar a eficiência operacional sobre o respeito a princípios éticos fundamentais. O princípio da tomada de decisões responsável da \acrshort{acm} ressalta a importância de considerar as consequências sociais e morais das ações antes de implementá-las. A interseção entre esses princípios demonstra as complexidades envolvidas em situações de conflito ético e a dificuldade de estabelecer um equilíbrio entre segurança, privacidade e dever profissional \cite{scheuerman}.
+
+Deste modo, temos os seguintes príncipios violados:
+\begin{enumerate}
+    \item \textbf{Confidencialidade} – Snowden violou o princípio da confidencialidade ao divulgar informações sigilosas obtidas durante o seu trabalho, contrariando o princípio 1.7 do código da \acrshort{acm}, que enfatiza a necessidade de proteger a privacidade e os dados de terceiros.
+    
+    \item \textbf{Integridade} – A \acrshort{nsa} comprometeu a integridade ao conduzir vigilância em massa sem transparência ou supervisão adequada, desrespeitando o princípio 1.3 da \acrshort{acm}, que exige honestidade e respeito aos direitos dos indivíduos.
+    
+    \item \textbf{Responsabilidade Social} – Snowden fundamentou a sua decisão no princípio da responsabilidade social, conforme o princípio 1.2 da \acrshort{acm}, argumentando que o seu dever era zelar pelo bem público, mesmo que isso implicasse desobedecer às normas internas da organização.
+    
+    \item \textbf{Objetividade e Transparência} – O governo dos \acrshort{eua} falhou nos princípios de objetividade e transparência, violando o princípio 1.4 da \acrshort{acm}, que exige que profissionais de computação forneçam informações completas e compreensíveis sobre sistemas que impactam a sociedade. \cite{association}
+\end{enumerate}
+
+\section{Resolução de Problemas}
+
+A violação dos princípios éticos no caso Edward Snowden exige uma análise das possíveis soluções para equilibrar segurança nacional e respeito pelos direitos fundamentais. A \textbf{ética deontológica} e \textbf{ética preventiva}, permite proteger os princípios violados anteriormente referidos.
+
+\subsection{Proteção Através da Ética Deontológica}
+
+A \textbf{ética deontológica} defende que certas normas éticas devem ser seguidas independentemente das consequências, assegurando que instituições e indivíduos ajam de forma moralmente correta.
+
+\subsubsection*{Reforço da Confidencialidade}
+Snowden quebrou o seu dever de manter sigilo sobre informações sigilosas do governo, levando ao dilema entre lealdade institucional (corporativismo) e dever moral para com a sociedade. Para evitar futuras quebras de confidencialidade, é essencial:
+\begin{itemize}
+    \item Criar canais internos seguros e independentes para que funcionários possam denunciar irregularidades dentro da própria estrutura governamental sem recorrer à exposição pública.
+    \item Estabelecer um \textbf{código de conduta rigoroso} que equilibre a necessidade de sigilo com a proteção dos direitos fundamentais, garantindo que a confidencialidade seja respeitada, mas que não se torne um pretexto para esconder abusos de poder.
+\end{itemize}
+
+\subsubsection*{Garantia da Integridade Institucional}
+A NSA violou o princípio da integridade ao realizar vigilância em massa sem transparência e sem o conhecimento da sociedade, contrariando valores democráticos. Para evitar tais práticas, é necessário:
+\begin{itemize}
+    \item Implementar um \textbf{sistema de auditoria independente} que avalie regularmente as operações de vigilância, garantindo que estas estejam alinhadas com princípios legais e éticos.
+    \item Exigir que programas de segurança cibernética sejam supervisionados por comités externos, assegurando o seguimento de padrões de \textbf{ética na gestão de dados}.
+\end{itemize}
+
+\subsubsection*{Promoção da Responsabilidade Social}
+Snowden justificou sua ação com base no princípio da responsabilidade social, defendendo que seu compromisso maior era com a sociedade, mesmo violando regras internas do seu trabalho\cite{teresa}. Para fortalecer essa responsabilidade sem comprometer a segurança nacional:
+\begin{itemize}
+    \item Criar um \textbf{código global de ética para serviços de inteligência}, garantindo que as operações sigam princípios democráticos e respeitem direitos fundamentais.
+    \item Introduzir \textbf{formação ética obrigatória} para profissionais que lidam com dados sensíveis, assegurando que compreendam a necessidade de equilibrar segurança nacional e liberdade individual.
+\end{itemize}
+
+\subsubsection*{Objetividade e Transparência no Uso de Dados}
+O governo dos \acrshort{eua} comprometeu esses princípios ao realizar operações secretas que afetaram milhões de pessoas sem informar ou obter consentimento da sociedade. Para mitigar esse problema:
+\begin{itemize}
+    \item Tornar obrigatória a \textbf{publicação periódica de relatórios de transparência}, detalhando a extensão e os objetivos das atividades de vigilância.
+    \item Exigir que qualquer recolha de dados seja \textbf{submetida a uma autorização judicial clara e criteriosa}, garantindo que apenas operações devidamente justificadas sejam aprovadas.\cite{pilati}
+\end{itemize}
+
+
+\subsection{Proteção Através da Ética preventiva}
+A ética preventiva busca antecipar e evitar possiveis problemas éticos antes mesmo que estes se manifestem. Diferente das outras abordagens da ética, esta concentra-se na prevenção de danos, na definição de diretrizes e na promoção de condutas responsáveis. No caso de Snowden a ética preventiva poderia ter contribuido para antecipar e mitigar certos conflitos éticos que relativamente ao caso estão relacionados com a vigilância massiva e com a privacidade dos dados. Algumas das abordagens que poderia ter tomando seriam, a avaliação dos impactos éticos, transparência e controlo democrático, a criação de protocolos e normas éticas assim como o debate publico.
+
+\subsubsection*{Avaliação dos impactos éticos}
+Uma analise prévia dos possiveis impactos das suas ações a nivel ético, seria uma forma de indentificar potênciais violações que poderia estar a infrigir, nomeadamente a privacidade e a liberdade de cada indivíduo. Esta análise permitiria o desenvolvimento de salvaguardas que equilibrassem a segurança nacional como também os direitos dos cidadãos.
+
+\subsubsection*{Transparência e controlo democrático}
+A criação de mecanismos de supervisão como instituições que têm participação em diferentes setores na sociedade, seriam uma medida preventiva pois poderiam monitorizar atividades de colheita e análise de dados. Este tipo de transparência poderia ajudar a evitar abusos e aumentar a confiança do público nas instituições.
+
+\subsubsection*{Criação de protocolos e normas éticas}
+A implementação de protocolos e códigos de conduta são fundamentais, pois através da clareza dos mesmos, as organizações conseguem prevenir a prática de ações que ultrapassem os limites do aceitável. Manter estes documentos atualizados e revistos periodicamente é de extrema importância devido aos avanços acelarados das inovações tecnológicas e dos desafios que trazem.
+
+
+\subsubsection*{Debate público}
+A promoção do debate público sobre as práticas de vigilância e recolha de dados, permitiria uma discussão aberta sobre os limites e os direitos de cada cidadão, pois através do envolvimento de diversos atores sociais poderia ajudar à chegada de um consenso sobre o que é considerado aceitável dentro dos limites éticos. 
+
+
 
 \section{Considerações Finais}
+
+O caso de Edward Snowden ilustra o impacto significativo que a tecnologia pode ter na sociedade e nos direitos fundamentais dos cidadãos. A sua denúncia expôs violações éticas e legais cometidas pelo governo dos \acrshort{eua}, destacando a necessidade de um equilíbrio entre segurança nacional e privacidade individual. 
+
+Para além disso, as motivações de Snowden parecem estar perfeitamente alinhadas com a proteção dos direitos dos cidadãos e com os princípios de transparência total do governo. Ele disponibilizou todos os documentos aos jornalistas, em vez de os revelar diretamente ou de os utilizar para obter vantagens pessoais sem negociar nenhuma informação. A intensidade do sofrimento por consequências severas, bem como o exílio, fortalece a noção de que a ação de Snowden foi motivada pela convicção, e não pelo benefício próprio.
+
+A análise deste caso mostra que, em sociedades democráticas, o sigilo estatal deve ter limites claros e estar sujeito a mecanismos de supervisão independentes. A vigilância governamental deve ser realizada dentro de um quadro ético e legal que respeite os direitos dos cidadãos, prevenindo abusos de poder. A adoção de códigos de ética sólidos e de canais seguros para denúncias poderia ter evitado a necessidade de um ato tão drástico como o de Snowden.
+
+Por fim, este estudo reforça a importância da reflexão ética na era digital. A tecnologia deve ser usada para proteger e empoderar as pessoas, e não para restringir as suas liberdades. A transparência e a responsabilidade social devem ser princípios fundamentais na gestão da informação, garantindo que a segurança de um país não se sobreponha aos direitos fundamentais dos seus cidadãos.
 
 \begin{thebibliography}{10}
 
@@ -106,9 +196,15 @@ Os documentos em questão relatavam o facto de que a \acrshort{nsa} implementava
     \bibitem{wired}
     Greenberg, A. (n.d.). These Are the Emails Snowden Sent to First Introduce His Epic NSA Leaks. Wired. \url{https://www.wired.com/2014/10/snowdens-first-emails-to-poitras/}
 
+    \bibitem{scheuerman}
+    Scheuerman, W. E. (2014). Whistleblowing as civil disobedience: The case of Edward Snowden. Philosophy \& Social Criticism, 40(7), 609-628.
+    
+    \bibitem{association}
+    Association for Computing Machinery. (2018). ACM code of ethics and professional conduct. Association for Computing Machinery. https://www.acm.org/code-of-ethics
+    
+    \bibitem{permanentrecord}
+    Snowden, E. (2019). Permanent record. Metropolitan Books.
 
-    
-    
     \bibitem{chatgpt}
         OpenAI. (2024). \textit{ChatGPT}. OpenAI. Disponível em: \url{https://chatgpt.com/}. Versão 4o mini.
     
